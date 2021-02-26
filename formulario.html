@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Trabalho Prático 01</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand btn btn-danger" href="index.html">Biblioteca</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="link1" class="btn btn-danger" aria-current="page " href="formulario.html">Formulário</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a id="link2" class="btn btn-danger" aria-current="page " href="emprestados.html ">Livros Emprestados</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid" style="max-width: 35%">
+        <div class="form-style">
+            <h1 class="display-4 text-center mt-5">Formulário:</h1>
+            <div class="justify-content-center">
+                <form class="mt-3">
+                    <div class="mb-2 ">
+                        <label for="nomeCliente " class="form-label">Nome do Cliente:</label>
+                        <input required type="text " class="form-control " id="nomeCliente">
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="nomeLivro " class="form-label ">Nome do Livro:</label>
+                        <input required type="text " class="form-control " id="nomeLivro">
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="dataEmp " class="form-label ">Data de Empréstimo:</label>
+                        <input required type="date" class="form-control " id="dataEmp">
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="tempoEmp " class="form-label ">Tempo de Empréstimo:</label>
+                        <select name="select " id="tempoEmp" class="form-select">
+                    <option value="" selected disabled>Selecione o tempo de empréstimo</option>
+                    <option value="2 ">01 dia</option>
+                    <option value="4 ">04 dias</option>
+                    <option value="6 ">06 dias</option>
+                    <option value="8 ">08 dias</option>                    
+                </select>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-danger btn-block" id="gravar">Salvar</button>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src=" script.js "></script>
+</body>
+
+</html>
